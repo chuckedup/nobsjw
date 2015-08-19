@@ -20,8 +20,12 @@
 
 .modal-footer{
   border-top: none;
+  text-align: center;
 }
 
+.modal-heading {
+  text-align: center;
+}
 
 @media screen and (min-width: 768px) {
   .modal:before {
