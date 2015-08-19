@@ -1,1 +1,33 @@
 // Add all css related to modals here.
+// center the modal on screen
+.modal {
+  text-align: center;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-header{
+  border-bottom: none;
+}
+
+.modal-title{
+  text-align: center;
+}
+
+.modal-footer{
+  border-top: none;
+}
+
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}

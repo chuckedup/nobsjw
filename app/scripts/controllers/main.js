@@ -8,10 +8,20 @@
  * Controller of the nobsjwApp
  */
 angular.module('nobsjwApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, $modal) {
+    $scope.open = function(size) {
+      var modalInstance = $modal.open({
+        templateUrl: 'views/modal-views/_cheatsheet-view.html',
+        controller: 'ModalInstanceCtrl',
+        size: size
+      });
+    };
   });
+
+angular.module('nobsjwApp')
+  .controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
+
+  $scope.ok = function () {
+    $modalInstance.dismiss('cancel');
+  };
+});
