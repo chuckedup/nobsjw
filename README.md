@@ -11,7 +11,7 @@ To clone the repo
 
 `git clone https://github.com/chuckedup/nobsjw.git` into the folder you want to have the repo.
 
-Then run `bower install` for `bower_components` and then run `grunt serve` to launch
+Then run `bower install` for `bower_components` and `npm install` and then run `grunt serve` to launch
 
 ## Build & development
 
