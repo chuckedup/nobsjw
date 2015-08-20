@@ -21,4 +21,21 @@ textarea {
   resize: none;
   font-size: 11pt;
   border: none;
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+.textfield {
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.textfield:focus{
+  outline: none;
 }
