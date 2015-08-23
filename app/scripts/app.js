@@ -19,6 +19,7 @@ angular
     'ngSanitize',
     'ngTouch',
     'ngMaterial',
+    'ui.bootstrap',
     'ui.router'
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
