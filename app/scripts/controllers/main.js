@@ -9,12 +9,31 @@
  */
 angular.module('nobsjwApp')
   .controller('MainCtrl', function ($scope, $modal) {
-    $scope.open = function(size) {
+    $scope.cheatsheet = function(size) {
       var modalInstance = $modal.open({
         templateUrl: 'views/modal-views/_cheatsheet-view.html',
         controller: 'ModalInstanceCtrl',
         size: size
       });
+    };
+
+    $scope.exportMe = function(size){
+      var modalInstance = $modal.open({
+        templateUrl: 'views/modal-views/_export-view.html',
+        controller: 'ModalInstanceCtrl',
+        size: size
+      });
+    };
+
+  })
+  .directive('borderClick', function(){
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs){
+        element.on('click', function(){
+          $('#textfield-area').css('border', '1px solid black');
+        });
+      }
     };
   });
 

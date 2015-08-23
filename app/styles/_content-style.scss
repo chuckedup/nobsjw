@@ -18,6 +18,8 @@ body {
   width: 50%;
 }
 
+.toolbar-side {}
+
 textarea {
   height: 100vh;
   width: 33vw;
@@ -33,10 +35,10 @@ textarea {
 
 .btn-default {
   border: none;
-
+  background: transparent;
   &:hover {
     border: none;
-    background: white;
+    background: transparent;
   }
 
 }
@@ -47,6 +49,11 @@ textarea {
   border: 0;
   padding-left: 10px;
   width: 70%;
+
+  &:focus{
+    outline: none;
+  }
+
 }
 
 #textfield-area{
