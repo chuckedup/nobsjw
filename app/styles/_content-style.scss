@@ -45,21 +45,23 @@ textarea {
   font-size: 22px;
   font-weight: bold;
   border: 0;
-  border-bottom: 1px solid #cacaca;
   padding-left: 10px;
-  width: 79%;
+  width: 70%;
+}
+
+#textfield-area{
+  border-bottom: 1px solid #cacaca;
 
   &:focus {
-    outline: none;
-    border: 0;
     border-bottom: 1px solid black;
   }
 
 }
 
+
 .textfield-toolbar {
   float: right;
-  width: 21%;
+  width: 30%;
 }
 
 .textarea-toolbar {
@@ -67,5 +69,3 @@ textarea {
 }
 
 
-#textfield-area{
-}
