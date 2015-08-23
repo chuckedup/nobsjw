@@ -15,11 +15,12 @@ body {
   // border: 1px solid black;
   background: white;
   height: 100%;
+  width: 50%;
 }
 
 textarea {
   height: 100vh;
-  width: 698px;
+  width: 33vw;
   resize: none;
   font-size: 11pt;
   border: none;
@@ -46,7 +47,7 @@ textarea {
   border: 0;
   border-bottom: 1px solid #cacaca;
   padding-left: 10px;
-  width: 80%;
+  width: 79%;
 
   &:focus {
     outline: none;
@@ -54,4 +55,17 @@ textarea {
     border-bottom: 1px solid black;
   }
 
+}
+
+.textfield-toolbar {
+  float: right;
+  width: 21%;
+}
+
+.textarea-toolbar {
+  float: right;
+}
+
+
+#textfield-area{
 }
