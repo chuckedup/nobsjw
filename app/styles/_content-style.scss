@@ -30,6 +30,16 @@ textarea {
 
 }
 
+.btn-default {
+  border: none;
+
+  &:hover {
+    border: none;
+    background: white;
+  }
+
+}
+
 .textfield {
   font-size: 22px;
   font-weight: bold;
