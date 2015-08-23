@@ -27,6 +27,13 @@
   text-align: center;
 }
 
+#export {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
   .modal:before {
     display: inline-block;

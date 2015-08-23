@@ -18,8 +18,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'ui.router',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'ui.router'
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('home');

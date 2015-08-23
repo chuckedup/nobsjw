@@ -1,13 +1,25 @@
 <div class="content">
-  <div class="row">
-    <div class"col-md-12">
-      <input type="text" placeholder="Title" class="textfield">
+  <div id="textfield-area">
+    <input type="text" placeholder="Title" class="textfield">
+    <div class="textfield-toolbar">
+      <a href="#/" class="btn btn-default"><i class="fa fa-align-left"></i></a>
+      <a href="#/" class="btn btn-default"><i class="fa fa-align-center"></i></a>
+      <a href="#/" class="btn btn-default"><i class="fa fa-align-right"></i></a>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-12">
-      <textarea rows="10" placeholder="Write your next masterpiece"></textarea>
+
+  <div id="textarea-area">
+    <div class="textarea-toolbar">
+      <a href="#/" class="btn btn-default"><i class="fa fa-align-left"></i></a>
+      <a href="#/" class="btn btn-default"><i class="fa fa-align-center"></i></a>
+      <a href="#/" class="btn btn-default"><i class="fa fa-align-right"></i></a>
+      <a href="#/" class="btn btn-default"><i class="fa fa-align-justify"></i></a>
     </div>
+    <textarea rows="10" placeholder="Write your next masterpiece"></textarea>
   </div>
-  <button class="btn btn-default" ng-click="open()"> Open me </button>
+</div>
+
+<div class="toolbar-side" border-click>
+  <a ng-click="cheatsheet()" class="btn btn-default"><i class="fa fa-download"></i></a>
+  <a ng-click="exportMe()" class="btn btn-default"><i class="fa fa-question-circle"></i></a>
 </div>

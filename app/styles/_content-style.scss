@@ -4,6 +4,7 @@ body {
   background: #f0f0f0;
   padding: 0;
   font-family: 'Inconsolata';
+  height: 100%;
 }
 
 .content {
@@ -13,11 +14,15 @@ body {
   margin-right: auto;
   // border: 1px solid black;
   background: white;
+  height: 100%;
+  width: 50%;
 }
 
+.toolbar-side {}
+
 textarea {
-  height: 600px;
-  width: 698px;
+  height: 100vh;
+  width: 33vw;
   resize: none;
   font-size: 11pt;
   border: none;
@@ -28,15 +33,46 @@ textarea {
 
 }
 
+.btn-default {
+  border: none;
+  background: transparent;
+  &:hover {
+    border: none;
+    background: transparent;
+  }
+
+}
+
 .textfield {
   font-size: 22px;
   font-weight: bold;
-  border: none;
+  border: 0;
   padding-left: 10px;
-  width: 100%;
+  width: 70%;
 
-  &:focus {
+  &:focus{
     outline: none;
   }
 
 }
+
+#textfield-area{
+  border-bottom: 1px solid #cacaca;
+
+  &:focus {
+    border-bottom: 1px solid black;
+  }
+
+}
+
+
+.textfield-toolbar {
+  float: right;
+  width: 30%;
+}
+
+.textarea-toolbar {
+  float: right;
+}
+
+
