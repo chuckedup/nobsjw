@@ -41,6 +41,10 @@ angular.module('nobsjwApp')
   .controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
 
   $scope.ok = function () {
+    // Test
+    var doc = new jsPDF();
+    doc.text(20,20, 'Hello World');
+    doc.save('Test.pdf');
     $modalInstance.dismiss('cancel');
   };
 });
