@@ -12,7 +12,7 @@ angular.module('nobsjwApp')
     $scope.cheatsheet = function(size) {
       var modalInstance = $modal.open({
         templateUrl: 'views/modal-views/_cheatsheet-view.html',
-        controller: 'ModalInstanceCtrl',
+        controller: 'CheatsheetCtrl',
         size: size
       });
     };
@@ -20,7 +20,7 @@ angular.module('nobsjwApp')
     $scope.exportMe = function(size){
       var modalInstance = $modal.open({
         templateUrl: 'views/modal-views/_export-view.html',
-        controller: 'ModalInstanceCtrl',
+        controller: 'ExportCtrl',
         size: size
       });
     };
@@ -38,13 +38,25 @@ angular.module('nobsjwApp')
   });
 
 angular.module('nobsjwApp')
-  .controller('ModalInstanceCtrl', function ($scope, $modalInstance) {
+  .controller('CheatsheetCtrl', function ($scope, $modalInstance) {
 
   $scope.ok = function () {
-    // Test
-    var doc = new jsPDF();
-    doc.text(20,20, 'Hello World');
-    doc.save('Test.pdf');
     $modalInstance.dismiss('cancel');
   };
+});
+
+angular.module('nobsjwApp')
+  .controller('ExportCtrl', function ($scope, $modalInstance){
+
+  $scope.exportpdf = function (){
+    var doc = new jsPDF();
+    doc.text(20, 20, 'Hello World');
+    doc.save('Test.pdf');
+    $modalInstance.dismiss('cancel'); // good idea ?
+  };
+
+  $scope.exportdoc  = function (){
+    $modalInstance.dismiss('cancel');
+  }
+
 });
